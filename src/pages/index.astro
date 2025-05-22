@@ -1,11 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import NavigationBar from '../components/NavigationBar';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Projects from '../components/Projects.jsx'
+// import BackgroundScrollVideo from '../components/BackgroundScrollVideo';
+import Footer from '../components/Footer';
+import ParallaxLayout from '../components/ParallaxLayout.jsx';
 ---
 
 <Layout>
-	<Welcome />
+	<NavigationBar client:load />
+	<main id="scroll-container">
+		<ParallaxLayout client:only="react">
+			<Hero client:only="react"/>
+			<About client:load/>
+			<Projects client:only="react"/>
+		</ParallaxLayout>
+	</main>
+	<Footer />
 </Layout>

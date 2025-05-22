@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+/* Optional if not using Tailwind classes for everything */
+.switch {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.switch svg path {
+    fill: white;
+}
+/* Add this to your global styles or tailwind layer */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}  
