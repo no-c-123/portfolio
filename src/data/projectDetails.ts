@@ -1,7 +1,7 @@
 // src/data/projectDetails.ts
 
 export const projectDetails: Record<string, { title: string; text: string }[]> = {
-  "Mydilsa Web": [
+  "Mydilsa": [
     {
       title: "Inicio del Proyecto",
       text: "Se planteó una presencia web profesional para Mydilsa que reflejara su enfoque en diseño industrial, precisión y calidad en servicios de maquinado.",

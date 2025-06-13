@@ -13,9 +13,9 @@ export default function About() {
   ];
 
   const socials = [
-    { name: "GitHub", link: "https://github.com/yourusername", logo: "/logos/github.svg" },
-    { name: "LinkedIn", link: "https://linkedin.com/in/yourusername", logo: "/logos/linkedin.svg" },
-    { name: "Email", link: "mailto:youremail@example.com", logo: "/logos/gmail.svg" },
+    { name: "GitHub", link: "https://github.com/no-c-123", logo: "/logos/github.svg" },
+    { name: "LinkedIn", link: "https://www.linkedin.com/in/h%C3%A9ctor-emiliano-leal-prieto-b581a92b1/", logo: "/logos/linkedin.svg" },
+    { name: "Email", link: "mailto:leal.emiliano.hector@gmail.com", logo: "/logos/gmail.svg" },
   ];
 
   return (

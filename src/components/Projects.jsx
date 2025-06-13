@@ -7,19 +7,9 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Mydilsa Web",
+      title: "Mydilsa",
       image: "/Logo.webp",
       link: "https://mydilsa-web.vercel.app",
-    },
-    {
-      title: "Proyecto 2",
-      image: "https://picsum.photos/seed/mydilsa/600/400",
-      link: "#",
-    },
-    {
-      title: "Proyecto 3",
-      image: "https://picsum.photos/seed/mydilsa/600/400",
-      link: "#",
     },
   ];
 
@@ -57,7 +47,7 @@ export default function Projects() {
               src={project.image}
               alt={project.title}
               className={`h-96 w-full mx-auto ${
-                project.title === "Mydilsa Web"
+                project.title === "Mydilsa"
                   ? "object-contain bg-black p-4"
                   : "object-cover"
               } blur-sm group-hover:blur-none group-hover:scale-105 transition duration-500 rounded-lg`}
