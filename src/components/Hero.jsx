@@ -9,12 +9,7 @@ export default function About() {
 
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
           Hola, soy <span className="inline-flex items-center gap-2">
-            Hector
-            <img
-              src='/profile.png'
-              alt="Foto de perfil"
-              className="w-10 h-10 rounded-full object-cover"
-            />
+            Hector Leal
           </span>
         </h1>
 
@@ -23,10 +18,11 @@ export default function About() {
         </p>
 
         <a
-          href="#contact"
-          className="inline-block bg-purple-600 hover:bg-purple-700 transition text-white font-semibold px-6 py-3 rounded-full"
+          href="/CV_Hector_Leal.pdf"
+          download
+          className="mt-4 inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition"
         >
-          Contáctame
+          📄 Descargar CV
         </a>
 
         
