@@ -9,7 +9,7 @@ export default function Projects() {
     {
       title: "Mydilsa",
       image: "/Logo.webp",
-      link: "https://mydilsa-web.vercel.app",
+      link: "https://mydilsa-dev.vercel.app",
     },
   ];
 
