@@ -67,12 +67,16 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="bg-purple-600 hover:bg-purple-700 transition px-6 py-3 text-white rounded-full font-semibold"
+            className="bg-purple-600 hover:bg-purple-700 transition px-6 py-3 text-white rounded-full font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
+            {status === 'sending' && (
+              <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+              </svg>
+            )}
             {status === 'sending' ? 'Enviando...' : 'Enviar mensaje'}
           </button>
-          {status === 'success' && <p className="text-green-400">¡Mensaje enviado con éxito!</p>}
-          {status === 'error' && <p className="text-red-500">Hubo un error. Intenta de nuevo.</p>}
         </form>
       </div>
     </section>

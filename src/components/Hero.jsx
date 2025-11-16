@@ -1,5 +1,4 @@
-
-export default function About() {
+export default function Hero() {
   return (
     <section id="Inicio" className="min-h-screen flex flex-col justify-center items-center bg-[#0d0d0d] text-white px-6 text-center">
       <div className="max-w-3xl">
@@ -8,13 +7,13 @@ export default function About() {
         </p>
 
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
-          Hola, soy <span className="inline-flex items-center gap-2">
+          Hola, soy <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
             Hector Leal
           </span>
         </h1>
 
         <p className="text-xl text-gray-300 mb-8">
-          Actualmente estudio desarrollo web y diseño para en el futuro ayudar a empresas a mejorar su presencia digital.
+          Desarrollo experiencias web modernas y funcionales que impulsan negocios digitales.
         </p>
 
         <a

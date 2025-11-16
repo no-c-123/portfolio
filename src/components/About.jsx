@@ -37,8 +37,8 @@ export default function About() {
             {[...techStack, ...techStack].map((tech, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center bg-[#111] border border-gray-700 rounded-xl shadow-lg"
-              >
+                  className="flex-shrink-0 w-32 h-32 flex flex-col items-center justify-center bg-[#111] border border-gray-700 rounded-xl shadow-lg hover:border-purple-500 hover:bg-purple-900/10 transition-all duration-300"
+                >
                 <img src={tech.logo} alt={tech.name} className="h-10 w-10 mb-2" />
                 <p className="text-sm text-gray-300">{tech.name}</p>
               </div>
@@ -54,7 +54,7 @@ export default function About() {
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-80 hover:opacity-100 transition transform hover:scale-125"
+              className="opacity-80 hover:opacity-100 transition transform hover:scale-125 hover:bg-purple-900 rounded-full p-2"
             >
               <img src={social.logo} alt={social.name} className="h-6" />
             </a>
